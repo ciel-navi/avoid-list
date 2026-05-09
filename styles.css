@@ -21,7 +21,7 @@ body {
 }
 
 main {
-  width: min(1080px, calc(100% - 32px));
+  width: min(1080px, calc(100% - 48px));
   margin: 0 auto;
 }
 
@@ -153,7 +153,7 @@ a {
   background: #fff8dc;
 }
 
-/* ── Bottom nav inside mockup ────────────────────────────── */
+/* ── Bottom nav inside mockup ─────────────────────────────── */
 
 .nav-bar {
   display: flex;
@@ -224,7 +224,7 @@ ul {
 
 @media (max-width: 820px) {
   main {
-    width: min(100% - 24px, 560px);
+    width: min(480px, calc(100% - 48px));
   }
 
   .hero {
@@ -235,7 +235,7 @@ ul {
   }
 
   .phone {
-    max-width: 400px;
+    width: min(320px, 72%);
     margin: 0 auto;
   }
 
@@ -248,7 +248,7 @@ ul {
 
 @media (max-width: 480px) {
   main {
-    width: calc(100% - 24px);
+    width: calc(100% - 48px);
   }
 
   h1 {
@@ -260,7 +260,8 @@ ul {
   }
 
   .phone {
-    max-width: 100%;
+    width: min(300px, 72%);
+    margin: 0 auto;
   }
 
   .primary,
