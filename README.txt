@@ -21,4 +21,4 @@ APK:
 AvoidList.apk
 
 SHA-256:
-579e00f54d306ec70abadfa76b672f0157e8e93f0d493b0f7ae2bab375f7bcad
+6faa2dba9cd198e5d98e048de42aab3febf26a48d4f18938dcf7752fc76c4858
