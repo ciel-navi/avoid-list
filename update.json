@@ -1,7 +1,7 @@
 {
-  "latestVersionCode": 83,
-  "latestVersionName": "2.0.9",
+  "latestVersionCode": 84,
+  "latestVersionName": "2.1.0",
   "required": true,
-  "apkUrl": "https://ciel-navi.github.io/avoid-list/AvoidList-v2.0.9.apk",
+  "apkUrl": "https://ciel-navi.github.io/avoid-list/AvoidList-v2.1.0.apk",
   "message": "新しいAvoid リストがあります。更新ファイルを取得してインストールします。"
 }
