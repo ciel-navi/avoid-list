@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="今日しないこと、明日やらないことを目視できるAndroidアプリ Avoid リスト。">
+    <meta name="description" content="Avoid リスト Android配布ページ。">
     <title>Avoid リスト</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -11,66 +11,62 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Android app</p>
+          <p class="eyebrow">Android only</p>
           <h1>Avoid リスト</h1>
-          <p class="lead">今日しないこと、明日やらないことを見える場所に置くための小さなアプリ。</p>
-          <div class="actions">
-            <a class="primary" href="./AvoidList-v2.1.2.apk" download>APKをダウンロード</a>
+          <p class="lead">このページはAndroidアプリの配布入口です。アプリの内容はインストール後に表示されます。</p>
+          <div class="actions android-only">
+            <a class="primary" id="download-link" href="#" download>APKをダウンロード</a>
             <a class="secondary" href="#install">入れ方を見る</a>
+          </div>
+          <div class="desktop-only desktop-lock">
+            <p>PCでは利用できません。</p>
+            <p>Android端末でこのページを開いてください。</p>
           </div>
           <p class="meta">Android 6.0以降 / v2.1.2 / 端末内保存</p>
         </div>
-        <div class="phone" aria-label="Avoid リストの画面イメージ">
-          <div class="phone-bar"></div>
-          <div class="app-title">Avoid リスト</div>
-          <div class="date">2026/05/09 (土)</div>
-          <div class="lane">
-            <h2>今日しないこと</h2>
-            <p>深夜SNS</p>
-            <p>衝動買い</p>
-            <p>空腹時のコンビニ</p>
+        <div class="phone sealed" aria-label="Android専用">
+          <div class="seal-lines">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="lane tomorrow">
-            <h2>明日やらないこと</h2>
-            <p>朝一番のメール確認</p>
-            <p>予定外の資料作成</p>
-          </div>
-          <div class="nav-bar">
-            <span class="nav-item active">ホーム</span>
-            <span class="nav-item">昨日したこと</span>
-            <span class="nav-item">リスト</span>
-          </div>
+          <p>APK REQUIRED</p>
         </div>
       </section>
 
-      <section class="details" id="install">
+      <section class="details android-only" id="install">
         <div>
           <h2>インストール方法</h2>
           <ol>
             <li>上の「APKをダウンロード」を押します。</li>
-            <li>ダウンロードした <strong>AvoidList.apk</strong> を開きます。</li>
-            <li>確認画面が出たら、ブラウスからのインストールを許可します。</li>
+            <li>ダウンロードしたAPKを開きます。</li>
+            <li>確認画面が出たら、ブラウザからのインストールを許可します。</li>
             <li>もう一度APKを開いてインストールします。</li>
           </ol>
         </div>
         <div>
-          <h2>できること</h2>
+          <h2>配布について</h2>
           <ul>
-            <li>今日しないこと・明日やらないことを登録</li>
-            <li>今日と明日の間で移動</li>
-            <li>理由と代わりにすることを保存</li>
-            <li>昨日やってしまったことを記録</li>
-            <li>昨日の記録をそのまましないことリストへ引き継ぎ</li>
-            <li>ボトムナビでホーム・昨日・リストを切り替え</li>
+            <li>Google Play未公開のAPKです。</li>
+            <li>アプリの内容はインストール後に表示されます。</li>
+            <li>保存データは端末内に保存されます。</li>
           </ul>
         </div>
       </section>
 
-      <section class="notice">
+      <section class="notice android-only">
         <h2>配布メモ</h2>
         <p>このアプリはGoogle Play未公開のAPKです。Androidの設定により、初回だけ「不明なアプリのインストールを許可」が必要です。</p>
         <p class="hash">SHA-256: 1d86aa151696601fa20cd5cba39110cef54a8830a99311510bc611c275fc5e19</p>
       </section>
     </main>
+    <script>
+      const isAndroid = /Android/i.test(navigator.userAgent);
+      document.documentElement.classList.toggle("is-android", isAndroid);
+      document.documentElement.classList.toggle("is-desktop", !isAndroid);
+      if (isAndroid) {
+        document.getElementById("download-link").href = "./AvoidList-v2.1.2.apk";
+      }
+    </script>
   </body>
 </html>

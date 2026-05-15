@@ -102,76 +102,85 @@ a {
   width: 100%;
   border: clamp(6px, 1.5vw, 10px) solid #17211c;
   border-radius: clamp(20px, 4vw, 34px);
-  background: #fbfcf8;
+  background: #0b0d0c;
   padding: clamp(12px, 3vw, 20px);
   box-shadow: 0 24px 70px rgba(29, 42, 36, 0.16);
 }
 
-.phone-bar {
-  width: clamp(48px, 14vw, 72px);
-  height: 6px;
-  margin: 0 auto clamp(14px, 3vw, 22px);
-  border-radius: 999px;
-  background: #1d2a24;
+.sealed {
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.app-title {
-  font-size: clamp(16px, 4vw, 26px);
-  font-weight: 800;
+.sealed::before {
+  content: "";
+  position: absolute;
+  inset: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
 }
 
-.date {
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: clamp(11px, 2.5vw, 14px);
+.sealed p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font: 700 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.12em;
 }
 
-.lane {
-  margin-top: clamp(12px, 3vw, 22px);
+.seal-lines {
+  position: absolute;
+  inset: 0;
+}
+
+.seal-lines span {
+  position: absolute;
+  width: 68%;
+  height: 1px;
+  left: 16%;
+  background: rgba(255, 255, 255, 0.16);
+  transform: rotate(-28deg);
+}
+
+.seal-lines span:nth-child(1) {
+  top: 28%;
+}
+
+.seal-lines span:nth-child(2) {
+  top: 50%;
+}
+
+.seal-lines span:nth-child(3) {
+  top: 72%;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.is-desktop .android-only {
+  display: none;
+}
+
+.is-desktop .desktop-only {
+  display: block;
+}
+
+.desktop-lock {
+  margin-top: 30px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #ffffff;
-  padding: clamp(10px, 2.5vw, 16px);
+  background: var(--panel);
+  padding: 18px;
 }
 
-.lane h2 {
-  margin: 0 0 clamp(6px, 1.5vw, 12px);
-  font-size: clamp(13px, 3vw, 18px);
-}
-
-.lane p {
-  margin: clamp(4px, 1vw, 8px) 0;
-  border-radius: 6px;
-  background: #f4f7f1;
-  padding: clamp(7px, 1.8vw, 12px);
-  color: var(--ink);
-  font-weight: 650;
-  font-size: clamp(11px, 2.5vw, 15px);
-}
-
-.tomorrow p {
-  background: #fff8dc;
-}
-
-/* ── Bottom nav inside mockup ─────────────────────────────── */
-
-.nav-bar {
-  display: flex;
-  border-top: 1px solid var(--line);
-  margin-top: clamp(10px, 2.5vw, 16px);
-  padding-top: clamp(7px, 1.8vw, 10px);
-}
-
-.nav-item {
-  flex: 1;
-  text-align: center;
-  font-size: clamp(9px, 2vw, 11px);
-  color: #8faa98;
-  font-weight: 600;
-}
-
-.nav-item.active {
-  color: var(--green);
+.desktop-lock p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+  font-weight: 700;
 }
 
 /* ── Details & Notice ────────────────────────────────────── */
