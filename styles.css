@@ -193,7 +193,8 @@ a {
 }
 
 .details > div,
-.notice {
+.notice,
+.contact {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -201,7 +202,8 @@ a {
 }
 
 .details h2,
-.notice h2 {
+.notice h2,
+.contact h2 {
   margin: 0 0 14px;
   font-size: 24px;
 }
@@ -218,7 +220,8 @@ ul {
   margin: 0 0 40px;
 }
 
-.notice p {
+.notice p,
+.contact p {
   color: var(--muted);
   line-height: 1.8;
 }
@@ -227,6 +230,48 @@ ul {
   overflow-wrap: anywhere;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 13px;
+}
+
+.contact {
+  margin: 0 0 40px;
+}
+
+.contact form {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.contact label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  font: inherit;
+  padding: 13px 14px;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.trap {
+  display: none;
 }
 
 /* ── Tablet ───────────────────────────────────────────────── */
@@ -285,7 +330,8 @@ ul {
   }
 
   .details > div,
-  .notice {
+  .notice,
+  .contact {
     padding: 16px;
   }
 }

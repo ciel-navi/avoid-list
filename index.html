@@ -59,6 +59,30 @@
         <p>このアプリはGoogle Play未公開のAPKです。Androidの設定により、初回だけ「不明なアプリのインストールを許可」が必要です。</p>
         <p class="hash">SHA-256: 53aaab8aba68194d185ab7738c0ef4f4d09c45dbd94c9b77c573f20f4d3ddf9e</p>
       </section>
+
+      <section class="contact" id="contact">
+        <h2>問い合わせ</h2>
+        <p>返信が必要な場合は、連絡先を入れて送信してください。</p>
+        <form id="contact-form" method="POST">
+          <input type="hidden" name="_subject" value="Avoid リスト 問い合わせ">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="text" name="_honey" class="trap" tabindex="-1" autocomplete="off">
+          <label>
+            名前
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            返信先
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            内容
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="primary" type="submit">送信</button>
+        </form>
+      </section>
     </main>
     <script>
       const isAndroid = /Android/i.test(navigator.userAgent);
@@ -67,6 +91,9 @@
       if (isAndroid) {
         document.getElementById("download-link").href = "./AvoidList-v2.1.3.apk";
       }
+      const contactForm = document.getElementById("contact-form");
+      const contactKey = "MDQyNzA0MjdvaXVAZ21haWwuY29t";
+      contactForm.action = "https://formsubmit.co/" + atob(contactKey);
     </script>
   </body>
 </html>
