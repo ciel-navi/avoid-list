@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Avoid リスト Android配布ページ。">
-    <title>Avoid リスト</title>
+    <meta name="description" content="Avoid リスト Androidアプリのダウンロードと使い方。">
+    <title>Avoid リスト | Android App</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XT0MEYFYTY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,52 +18,116 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Android only</p>
+          <p class="eyebrow">Android APK / v1.0</p>
           <h1>Avoid リスト</h1>
-          <p class="lead">このページはAndroidアプリの配布入口です。アプリの内容はインストール後に表示されます。</p>
-          <div class="actions android-only">
-            <a class="primary" id="download-link" href="#" download>APKをダウンロード</a>
-            <a class="secondary" href="#install">入れ方を見る</a>
+          <p class="lead">昨日の行動を見て、今日しないことを選ぶ。使った時間と買ったものを残して、明日の自分が迷わないためのAndroidアプリです。</p>
+          <div class="actions">
+            <a class="primary android-only" id="download-link" href="#" download>APKをダウンロード</a>
+            <a class="secondary" href="#how">使い方を見る</a>
           </div>
           <div class="desktop-only desktop-lock">
-            <p>PCでは利用できません。</p>
-            <p>Android端末でこのページを開いてください。</p>
+            <p>ダウンロードはAndroid端末で開いてください。</p>
+            <p>PCでは使い方と安全性の確認だけできます。</p>
           </div>
-          <p class="meta">Android 6.0以降 / v1.0 / 端末内保存</p>
+          <p class="meta">Android 6.0以降 / 端末内保存 / 外部送信なし</p>
         </div>
-        <div class="phone sealed" aria-label="Android専用">
-          <div class="seal-lines">
+
+        <div class="app-preview" aria-label="Avoid リスト preview">
+          <div class="preview-top">
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <p>APK REQUIRED</p>
+          <div class="deck">
+            <div class="mini-card rear">
+              <b>Buy</b>
+              <strong>0円</strong>
+              <small>今日の金額</small>
+            </div>
+            <div class="mini-card side left">
+              <b>今日しないこと</b>
+              <strong>未決定</strong>
+              <small>リスト未作成</small>
+            </div>
+            <div class="mini-card side right">
+              <b>発生した時間</b>
+              <strong>0分</strong>
+              <small>まだありません</small>
+            </div>
+            <div class="mini-card main">
+              <b>昨日の今ごろ</b>
+              <strong>09:00</strong>
+              <small>未記録</small>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="details android-only" id="install">
+      <section class="download-panel android-only" id="download">
         <div>
-          <h2>インストール方法</h2>
+          <p class="eyebrow">Download</p>
+          <h2>Androidに直接インストール</h2>
+          <p>上のボタンからAPKをダウンロードして開いてください。初回だけ、ブラウザからのインストール許可が必要です。</p>
+        </div>
+        <a class="primary" id="download-link-bottom" href="#" download>APKをダウンロード</a>
+      </section>
+
+      <section class="section" id="how">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>使い方</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>昨日を振り返る</h3>
+            <p>日付を選び、時計から時間帯を入れます。何をしていたかを残すことで、今日の判断材料になります。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>今日しないことを選ぶ</h3>
+            <p>昨日の記録から、今日はしないことをリストへ移します。代わりにすることも一緒に残せます。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Buyを記録する</h3>
+            <p>買ったものと金額を入れます。今日、昨日、今月合計で見えるので、お金の流れも確認できます。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>ホームで今を見る</h3>
+            <p>ホームは4枚カードを横にスライドして、昨日の今ごろ、今日しないこと、Buy、発生した時間を確認します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Install</p>
+          <h2>インストール手順</h2>
           <ol>
-            <li>上の「APKをダウンロード」を押します。</li>
+            <li>Androidでこのページを開きます。</li>
+            <li>APKをダウンロードします。</li>
             <li>ダウンロードしたAPKを開きます。</li>
-            <li>確認画面が出たら、ブラウザからのインストールを許可します。</li>
+            <li>確認が出たら、ブラウザからのインストールを許可します。</li>
             <li>もう一度APKを開いてインストールします。</li>
           </ol>
         </div>
         <div>
-          <h2>配布について</h2>
+          <p class="eyebrow">Security</p>
+          <h2>安全性</h2>
           <ul>
-            <li>Google Play未公開のAPKです。</li>
-            <li>アプリの内容はインストール後に表示されます。</li>
-            <li>保存データは端末内に保存されます。</li>
+            <li>アプリ本体に外部通信処理はありません。</li>
+            <li>記録データは端末内に保存します。</li>
+            <li>連絡先、写真、位置情報、外部ストレージ権限は使いません。</li>
+            <li>必要な権限は通知と、再起動後の通知再設定だけです。</li>
           </ul>
         </div>
       </section>
 
-      <section class="notice android-only">
+      <section class="notice">
         <h2>配布メモ</h2>
-        <p>このアプリはGoogle Play未公開のAPKです。Androidの設定により、初回だけ「不明なアプリのインストールを許可」が必要です。</p>
+        <p>このアプリはGoogle Play未公開のAPKです。Androidの設定やPlay Protectにより、初回インストール時に確認表示が出る場合があります。</p>
         <p class="hash">SHA-256: d0cb8c0b3605fcd5aad9ba49a8e6f550faf9381a3e2d4f400784c78985f8cd24</p>
       </section>
 
@@ -95,9 +159,11 @@
       const isAndroid = /Android/i.test(navigator.userAgent);
       document.documentElement.classList.toggle("is-android", isAndroid);
       document.documentElement.classList.toggle("is-desktop", !isAndroid);
-      if (isAndroid) {
-        document.getElementById("download-link").href = "./AvoidList-v1.0-114.apk";
-      }
+      const apkUrl = "./AvoidList-v1.0-114.apk";
+      const topLink = document.getElementById("download-link");
+      const bottomLink = document.getElementById("download-link-bottom");
+      if (topLink) topLink.href = apkUrl;
+      if (bottomLink) bottomLink.href = apkUrl;
       const contactForm = document.getElementById("contact-form");
       const contactKey = "MDQyNzA0MjdvaXVAZ21haWwuY29t";
       contactForm.action = "https://formsubmit.co/" + atob(contactKey);
