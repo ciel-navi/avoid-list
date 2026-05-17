@@ -155,7 +155,7 @@ h3 {
 
 .app-preview {
   position: relative;
-  min-height: 560px;
+  min-height: 610px;
   border: 1px solid rgba(255,255,255,.12);
   border-radius: 42px;
   background: linear-gradient(145deg, #0b0b0d, #111116);
@@ -203,7 +203,7 @@ h3 {
 
 .deck {
   position: absolute;
-  inset: 92px 22px 38px;
+  inset: 92px 18px 34px;
 }
 
 .mini-card {
@@ -230,25 +230,25 @@ h3 {
 }
 
 .mini-card.main {
-  left: 44px;
-  right: 44px;
-  bottom: 0;
-  height: 245px;
+  left: 58px;
+  right: 58px;
+  bottom: 26px;
+  height: 260px;
   z-index: 3;
 }
 
 .mini-card.rear {
-  left: 72px;
-  right: 72px;
-  top: 0;
-  height: 150px;
+  left: 68px;
+  right: 68px;
+  top: 86px;
+  height: 166px;
   z-index: 1;
 }
 
 .mini-card.side {
-  top: 172px;
-  width: 178px;
-  height: 178px;
+  top: 258px;
+  width: 184px;
+  height: 190px;
   z-index: 2;
 }
 
@@ -377,7 +377,7 @@ ul {
   }
 
   .app-preview {
-    min-height: 510px;
+    min-height: 560px;
   }
 
   .steps,
@@ -406,27 +406,31 @@ ul {
   }
 
   .app-preview {
-    min-height: 470px;
+    min-height: 520px;
     border-radius: 32px;
   }
 
   .deck {
-    inset: 78px 14px 28px;
+    inset: 74px 12px 24px;
   }
 
   .mini-card.main {
     left: 36px;
     right: 36px;
-    height: 220px;
+    bottom: 20px;
+    height: 232px;
   }
 
   .mini-card.rear {
-    left: 54px;
-    right: 54px;
+    left: 50px;
+    right: 50px;
+    top: 76px;
+    height: 148px;
   }
 
   .mini-card.side {
-    width: 152px;
-    height: 164px;
+    top: 232px;
+    width: 150px;
+    height: 170px;
   }
 }
